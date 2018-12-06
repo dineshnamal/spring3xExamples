@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding = "UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans	http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+    <bean id="traingle" class="com.spring.examples.beans.TraingleV05">
+      <constructor-arg index="0" ref="zeroPointA"></constructor-arg>
+     <constructor-arg index="1" ref="pointB"></constructor-arg>
+      <constructor-arg index="2" ref="pointC"></constructor-arg>	
+    </bean>
+
+	<bean id="zeroPointA" class="com.spring.examples.beans.Point05">
+ 		<constructor-arg value="0"/>
+ 		<constructor-arg value="0"/> 		
+	</bean>
+
+	<bean id="pointB" class="com.spring.examples.beans.Point05">
+		<constructor-arg value="-20"/>
+ 		<constructor-arg value="-20"/> 	
+	</bean>
+
+	<bean id="pointC" class="com.spring.examples.beans.Point05">
+		<constructor-arg  value="20"/>
+ 		<constructor-arg value="20"/> 	
+	</bean>
+</beans>
